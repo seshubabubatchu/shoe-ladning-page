@@ -1,5 +1,99 @@
-<html>
-<body>
-  <h1>Hello world</h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <section class="header">
+      <div class="headercontainer">
+        <div class="leftlist">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="headerbrand"><a href="">sneakers</a></div>
+          <ul class="navcollapse">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <button class="closebtn">X</button>
+          </ul>
+        </div>
+        <div class="rightlist">
+          <img src="./images/icon-cart.svg" alt="" class="carticon">
+          <img src="./images/image-avatar.png" alt="" class="profileicon">
+        </div>
+      </div>
+    </section>
+    <section class="mainbody">
+
+      <section class="firstcontainer">
+        <div class="imagecontainer">
+          <div class="imageslist">
+            <img src="./images/image-product-1.jpg" id="img1" alt="" />
+            <img src="./images/image-product-2.jpg" id="img2" alt="" />
+            <img src="./images/image-product-3.jpg" id="img3" alt="" />
+            <img src="./images/image-product-4.jpg" id="img4" alt="" />
+          </div>
+  
+        </div>
+        <div class="imagepreview">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="" id="img1">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="" id="img2">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="" id="img3">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="" id="img4">
+        </div>
+      </section>
+     
+      <div class="carouselcontainer">
+        <div class="carousel">
+          <div class="slide">
+            <img src="./images/image-product-1.jpg" alt="" />
+            <img src="./images/image-product-2.jpg" alt="" />
+            <img src="./images/image-product-3.jpg" alt="" />
+            <img src="./images/image-product-4.jpg" alt="" />
+          </div>
+          <img src="./images/icon-previous.svg" class="prevbtn"></img>
+          <img src="./images/icon-next.svg" class="nextbtn"></img>
+        </div>
+      </div>
+      <div class="description">
+        <p class="brandname">Sneaker Company</p>
+        <h1 class="title">Fall Limited Edition Sneakers</h1>
+        <p class="productinfo">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole. they'll withstand everythong
+          the weather can offer.
+        </p>
+        <div class="price">
+          <div class="left">
+            <h2 class="rate">$125.00</h2>
+            <p class="offer">50%</p>
+          </div>
+          <div class="right">
+            <div class="strike">$250.00</div>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="one">
+            <span class="minus">-</span>
+            <input type="text" class="value" value="0" disabled></input>
+            <span class="plus">+</span>
+          </div>
+          <div class="two">
+            <button class="addtocart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
 </html>
